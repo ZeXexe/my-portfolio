@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import philiImage from './assets/phili2.jpg';
 import './App.css'; // Import your CSS file
-import DialogflowChatbot from './components/DialogflowChatbot'; // Import the Dialogflow chatbot
+import DialogFlowChatbot from './components/DialogFlowChatbot'; // Import the Dialogflow chatbot
 
 // Import the page components
 import AboutMe from './pages/AboutMe.jsx';
