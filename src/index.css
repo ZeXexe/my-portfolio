@@ -5,6 +5,13 @@ body {
   color: white;
 }
 
+.app-container { /* New class for your main content */
+  background-color: cream; /* Change to desired background for content */
+  color: black; /* Change text color for visibility */
+  padding: 20px; /* Optional: Add some padding */
+  min-height: 100vh; /* Optional: Ensure the container takes full height */
+}
+
 h1, h2 {
   margin: 0;
 }

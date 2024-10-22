@@ -1,8 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import philiImage from './assets/phili2.jpg';
-import './App.css'; // Import your CSS file
-import DialogFlowChatbot from './components/DialogFlowChatbot'; // Import the Dialogflow chatbot
+import './index.css'; // Imported first
+import './App.css'; // Imported last
+import DialogflowChatbot from './components/DialogFlowChatbot'; // Import the Dialogflow chatbot
 
 // Import the page components
 import AboutMe from './pages/AboutMe.jsx';
@@ -38,20 +39,21 @@ function App() {
           <Link to="/contact" className="nav-link">Contact</Link>
         </nav>
 
-        {/* Routes */}
-        <Routes>
-          <Route path="/about" element={<AboutMe />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/resume" element={<MyResume />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        {/* Main Content Container */}
+        <div className="app-container bg-white text-black p-5 min-h-screen w-full flex flex-col items-center justify-center">
+          {/* Routes */}
+          <Routes>
+            <Route path="/about" element={<AboutMe />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/resume" element={<MyResume />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
 
         {/* Chatbot Section */}
-<div className="chatbot-container mt-10"> {/* Added mt-10 class for margin top */}
-  <DialogflowChatbot /> {/* Add the Dialogflow chatbot here */}
-</div>
-
-        
+        <div className="chatbot-container mt-10"> {/* Added mt-10 class for margin top */}
+          <DialogflowChatbot /> {/* Add the Dialogflow chatbot here */}
+        </div>
       </div>
     </Router>
   );
