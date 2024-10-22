@@ -1,0 +1,66 @@
+/* General page styles */
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navigation Link Styles */
+.nav-link {
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #d8c99b;
+  color: #273e47;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #a4243b;
+  color: white;
+}
+
+/* Image and Name Section */
+.name-section {
+  text-align: center;
+  background-color: #273e47; /* You can keep this or change to cream */
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.name-section img {
+  background-color: #d8c99b;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+/* Chatbot Section */
+.chatbot-container {
+  margin-top: 50px; /* Adjust the value as needed */
+  display: flex; /* Center the chatbot if needed */
+  justify-content: center; /* Center the chatbot horizontally */
+}
+
+
+/* Update the main background color to cream */
+body, .min-h-screen {
+  color: black;
+  background-color: #f5f5dc; /* Cream color */
+}
+/*Project tab */
+.projects-container {
+  padding-top: 100px; /* Adjust this value to move the text lower */
+  text-align: center;
+}
+h3 {
+  color: black; /* Change the text color if needed */
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Add spacing between project items */
+}

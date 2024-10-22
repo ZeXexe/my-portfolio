@@ -1,0 +1,25 @@
+.chatbot {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  .messages {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+  }
+  
+  .user {
+    text-align: right;
+    color: purple;
+  }
+  
+  .bot {
+    text-align: left;
+    color: blue;
+  }
+  
